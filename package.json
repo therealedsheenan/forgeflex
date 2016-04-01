@@ -1,0 +1,28 @@
+{
+  "name": "forgeflex",
+  "version": "1.0.0",
+  "description": "A CSS grid library",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --use autoprefixer src/style.scss dist/style.css --sourcemaps=none --style compressed",
+    "sass": "sass src/style.scss dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealedsheenan/forgeflex.git"
+  },
+  "keywords": [
+    "flexbox",
+    "grid"
+  ],
+  "author": "Sheenan Tenepre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealedsheenan/forgeflex/issues"
+  },
+  "homepage": "https://github.com/therealedsheenan/forgeflex#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "sass": "^0.5.0"
+  }
+}
