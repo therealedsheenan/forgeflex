@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --use autoprefixer src/style.scss dist/style.css --sourcemaps=none --style compressed",
-    "sass": "sass src/style.scss dist/style.css"
+    "sass": "sass --use autoprefixer src/style.scss:dist/style.css",
+    "start": "npm run sass"
   },
   "repository": {
     "type": "git",
