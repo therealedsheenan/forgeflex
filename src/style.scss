@@ -1,0 +1,35 @@
+.Grid {
+    @include forgeFLex();
+}
+
+@mixin forgeFlex ( $type ) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @if ( $type == 'top') {
+        align-items: flex-start;
+    }
+    @if ( $type == 'bottom' ) {
+        align-items: center;
+    }
+    @if ( $type == 'middle' ) {
+        /*align*/
+    }
+}
+
+@mixn forgeCell () {
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* GRID cheatsheet */
+/*top      { align-items: flex-start; }
+middle   { align-items: center; }
+bottom   { align-items: flex-end; }
+stretch  { align-items: stretch; }
+baseline { align-items: baseline; }
+left     { justify-content: flex-start; }
+center   { justify-content: center; }
+right    { justify-content: flex-end; }
+between  { justify-content: space-between; }
+around   { justify-content: space-around; }*/
