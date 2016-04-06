@@ -1,5 +1,6 @@
 .Grid {
     @include forgeFLex();
+    //@include forgeFLex('top');
 }
 
 @mixin forgeFlex ( $type ) {
@@ -9,11 +10,32 @@
     @if ( $type == 'top') {
         align-items: flex-start;
     }
-    @if ( $type == 'bottom' ) {
+    @if ( $type == 'middle' ) {
         align-items: center;
     }
-    @if ( $type == 'middle' ) {
-        /*align*/
+    @if ( $type == 'bottom' ) {
+        align-items: flex-end;
+    }
+    @if ( $type == 'stretch' ) {
+        align-items: stretch;
+    }
+    @if ( $type == 'baseline' ) {
+        align-items: baseline;
+    }
+    @if ( $type == 'left' ) {
+        justify-content: flex-start;
+    }
+    @if ( $type == 'center' ) {
+        justify-content: center;
+    }
+    @if ( $type == 'right' ) {
+        justify-content: flex-end;
+    }
+    @if ( $type == 'between' ) {
+        justify-content: space-between;
+    }
+    @if ( $type == 'around' ) {
+        justify-content: space-around;
     }
 }
 
@@ -21,15 +43,3 @@
     box-sizing: border-box;
     flex-shrink: 0;
 }
-
-/* GRID cheatsheet */
-/*top      { align-items: flex-start; }
-middle   { align-items: center; }
-bottom   { align-items: flex-end; }
-stretch  { align-items: stretch; }
-baseline { align-items: baseline; }
-left     { justify-content: flex-start; }
-center   { justify-content: center; }
-right    { justify-content: flex-end; }
-between  { justify-content: space-between; }
-around   { justify-content: space-around; }*/
