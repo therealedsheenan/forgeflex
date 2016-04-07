@@ -4,9 +4,8 @@
   "description": "A CSS grid library",
   "main": "index.js",
   "scripts": {
-    "build": "sass --use autoprefixer src/style.scss dist/style.css --sourcemaps=none --style compressed",
-    "sass": "sass --use autoprefixer src/style.scss:dist/style.css",
-    "start": "npm run sass"
+    "build": "grunt production",
+    "start": "grunt"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,9 @@
   "homepage": "https://github.com/therealedsheenan/forgeflex#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.5",
-    "sass": "^0.5.0"
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
