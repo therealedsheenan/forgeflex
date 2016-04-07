@@ -1,45 +1,15 @@
-.Grid {
-    @include forgeFLex();
-    //@include forgeFLex('top');
+@import "mixins/forgeflex";
+
+.parent {
+    background-color: black;
+    color: red;
+    width: 100vh;
+    height: 100vh;
+    @include forgeParent('top');
 }
 
-@mixin forgeFlex ( $type ) {
-    display: flex;
-    flex-wrap: wrap;
-
-    @if ( $type == 'top') {
-        align-items: flex-start;
-    }
-    @if ( $type == 'middle' ) {
-        align-items: center;
-    }
-    @if ( $type == 'bottom' ) {
-        align-items: flex-end;
-    }
-    @if ( $type == 'stretch' ) {
-        align-items: stretch;
-    }
-    @if ( $type == 'baseline' ) {
-        align-items: baseline;
-    }
-    @if ( $type == 'left' ) {
-        justify-content: flex-start;
-    }
-    @if ( $type == 'center' ) {
-        justify-content: center;
-    }
-    @if ( $type == 'right' ) {
-        justify-content: flex-end;
-    }
-    @if ( $type == 'between' ) {
-        justify-content: space-between;
-    }
-    @if ( $type == 'around' ) {
-        justify-content: space-around;
-    }
-}
-
-@mixn forgeCell () {
-    box-sizing: border-box;
-    flex-shrink: 0;
+.child {
+    background-color: yellow;
+    height: 500px;
+    @include forgeChild(2);
 }
