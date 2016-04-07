@@ -25,8 +25,8 @@ grunt build
 ## Summary
 Forgeflex is a simple sass grid mixin that generates flex layout grids with only using 2 commands:
 
-- `@include forgeParent()` - It accepts a paremeter see [this]() to more about these properties. This snippet basically generates the parent of a flexbox layout.
+- `@include forgeParent()` - It accepts a paremeter see [this](https://github.com/therealedsheenan/forgeflex/blob/master/src/mixins/forgeflex.scss) to more about these properties. This snippet basically generates the parent of a flexbox layout.
 
-- `@include forgeChild()` - It accepts a paremeter see [this]() to more about about these properties.
+- `@include forgeChild()` - It accepts a paremeter see [this](https://github.com/therealedsheenan/forgeflex/blob/master/src/mixins/forgeflex.scss) to more about about these properties.
 
 The sample files in .html and .css is in the `dist` directory.
